@@ -1,0 +1,70 @@
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.calendar {
+  margin: 0 auto;
+  padding: 17px 12px;
+  display: block;
+  width: 300px;
+  border: 1px solid #737679;
+  height: 310px;
+}
+
+.years, .months, .dates, .dayTitle {
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
+}
+
+.dates li,
+.dayTitle li {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.years li,
+.months li {
+  width: 20px;
+  height: 20px;
+  padding: 27px 23px;
+  cursor: pointer;
+}
+
+.selected {
+  border-radius: 50%;
+  background: #db3d44;
+  color: white;
+}
+
+.years .grey,
+.dates .grey {
+  color: #eeeeee;
+}
+
+.navBar {
+  margin: 5px auto;
+  display: flex;
+}
+
+.navBar > * {
+  cursor: pointer;
+  margin: 3px;
+  width: 40px;
+}
+
+.switchButton {
+  flex: 1;
+}
